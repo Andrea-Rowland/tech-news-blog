@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { rest } = require('lodash');
 const { User } = require('../../models');
+const bcrypt = require('bcrypt');
 
 // GET /api/users
 router.get('/', (req, res) => {
