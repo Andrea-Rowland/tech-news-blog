@@ -4,7 +4,7 @@ const routes = require('./controllers');
 const exphbs = require('express-handlebars');
 const session = require('express-session');
 const helpers = require('./utils/helpers');
-const { sequelize } = require('./models/user');
+const { sequelize } = require('./models/User');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
